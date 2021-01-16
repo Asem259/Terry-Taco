@@ -2,17 +2,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="style.css" />
     <title>Responsive Website!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <!-- body background https://jolly-kalam-23776e.netlify.app/restaurantwebsite/assets/images/topography.svg -->
     <header>
-      <nav>
-        <span>☰</span>
+      <nav class="nav">
+        <input type="checkbox" id="menu"></input>
+        <label for="menu">☰</label>
 
-        <ul>
+        <ul class="nav__list">
           <li>
             <a href="">Tacos</a>
           </li>
@@ -32,67 +35,70 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="container" >
         <!-- use this image <img src="https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/taco.jpg" alt=""> -->
-        <div>
+        <div class="container__hero">
           <h1>Terry's Taco Joint</h1>
           <p>Pretty Good Tacos!</p>
         </div>
-        <div>
+        <div class="container__price price1">
           <p>$1.99</p>
           <p>Tacos</p>
         </div>
-        <div>
+        <div class="container__price price2">
           <p>$3.99</p>
           <p>Kombucha</p>
         </div>
-      </section>
+    
 
-      <section>
-        <div>
-          <span>🌮</span>
+        <div class="card__tacos container__card">
+          <span class="container__card--icon">🌮</span>
           <h3>Tacos</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
             assumenda.
           </p>
         </div>
-        <div>
-          <span>🍺</span>
+        <div class="card__beer container__card">
+          <span class="container__card--icon" >🍺</span>
           <h3>Beer</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
             assumenda.
           </p>
         </div>
-        <div>
-          <span>🍷</span>
+        <div class="card__wine container__card">
+          <span class="container__card--icon">🍷</span>
           <h3>Wine</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
             assumenda.
           </p>
         </div>
-        <div>
-          <span>🎵</span>
+        <div class="card__music container__card">
+          <span class="container__card--icon">🎵</span>
           <h3>Music</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
             assumenda.
           </p>
         </div>
-      </section>
 
-      <section>
-        <img
+    
+
+    
+    
+        <div class="container__taco">
+          <div class="container__taco--image">
+          <img
           src="https://jolly-kalam-23776e.netlify.app/restaurantwebsite/images/queso-taco.png"
           alt="Yummy Taco"
-        />
-        <div>
+        /></div>
+        <div class="container__taco--content">
           <h2>Featured Taco</h2>
           <p>Slim Profile, easy to hold and loaded with cheese.</p>
           <p>This is the one you have been waiting for</p>
-          <a>Learn More →</a>
+          <a>Learn More →</a></div>
         </div>
       </section>
 
