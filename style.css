@@ -161,3 +161,70 @@ header {
 .container__taco--image img {
   width: 100%;
 }
+.container__taco--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.container__taco--content p {
+  margin: 1rem 0 0 0;
+}
+.container__taco--content a {
+  margin-top: 1.4rem;
+  display: block;
+  background-color: #ffc600;
+  padding: 1rem;
+}
+/* -------------------------------------------------------------------------- */
+/* gallery */
+.gallery {
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, max-content));
+  gap: 1rem;
+}
+.gallery img {
+  object-fit: cover;
+  width: 100%;
+}
+.gallery_headline {
+  grid-column: 1/-1;
+  text-align: center;
+  height: 5rem;
+
+  padding: 1rem;
+
+  position: relative;
+}
+.gallery_headline::after {
+  content: " ";
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 241, 0) 0%,
+    rgba(255, 198, 0, 1) 100%
+  );
+  display: block;
+  height: 1rem;
+  width: 43%;
+  position: absolute;
+  right: 0;
+  top: 2rem;
+}
+.gallery_headline::before {
+  content: " ";
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 241, 0) 0%,
+    rgba(255, 198, 0, 1) 100%
+  );
+  display: block;
+  height: 1rem;
+  width: 43%;
+  position: absolute;
+  left: 0;
+  top: 2rem;
+}
